@@ -1,0 +1,7 @@
+set title "Linear Search Analysis CRC"
+set xlabel "Input Size"
+set ylabel "Operation Count"
+set style data linespoints
+set xrange [10:1000]
+set yrange [10:1000]
+plot "lbest.txt" using 1:2 title "Best Case", "lavg.txt" using 1:2 title "Average Case","lworst.txt" using 1:2 title "Worst Case"
